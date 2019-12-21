@@ -48,7 +48,7 @@ services:
       - guacd:guacd
     depends_on:
       - guacd
-      - db
+      - postgres
     environment:
       # Guacd Config
       - GUACD_HOSTNAME=guacd
