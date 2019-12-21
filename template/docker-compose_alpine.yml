@@ -38,7 +38,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
 
   guacamole:
-    image: guacamole/guacamole:${VERSION}
+    image: guacamole/guacamole:%%VERSION%%
     container_name: guacamole
     hostname: guacamole
     restart: always
