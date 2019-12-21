@@ -33,7 +33,7 @@ Apache Guacamole is a clientless remote desktop gateway. It supports standard pr
 
 See **Apache Guacamole Server** base image documentation for details.
 
-> [**Apache Guacamole Server** GitHub](https://github.com/apache/guacd)
+> [**Apache Guacamole Server** GitHub](https://github.com/apache/guacamole-server)
 
 > [**Apache Guacamole Server** DockerHub](https://hub.docker.com/r/guacamole/docker-guacd-base/)
 
