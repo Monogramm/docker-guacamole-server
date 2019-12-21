@@ -4,7 +4,6 @@ FROM guacamole/guacd:%%VERSION%%-alpine
 RUN set -ex; \
     apk add --no-cache --update \
         pulseaudio \
-        ghostscript \
     ; \
     sed -i \
         -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \

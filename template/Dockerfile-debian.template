@@ -5,7 +5,6 @@ RUN set -ex; \
     apt-get update -q; \
     apt-get install -y --no-install-recommends \
         pulseaudio \
-        ghostscript \
     ; \
     sed -i \
         -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
