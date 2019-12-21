@@ -2,7 +2,7 @@ FROM guacamole/guacd:%%VERSION%%-alpine
 
 # Add requirements and install application
 RUN set -ex; \
-    apk add --update \
+    apk add --no-cache --update \
         pulseaudio \
         ghostscript \
     ; \
