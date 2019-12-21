@@ -48,7 +48,7 @@ services:
       - guacd:guacd
     depends_on:
       - guacd
-      - db
+      - postgres
     environment:
       # Guacd Config
       - GUACD_HOSTNAME=guacd
@@ -56,7 +56,7 @@ services:
       # Guacamole Config
       - GUACAMOLE_HOME=/srv/guacamole/
       # Postgres Config
-      - POSTGRES_HOSTNAME=db
+      - POSTGRES_HOSTNAME=postgres
       - POSTGRES_PORT=5432
       - POSTGRES_DATABASE=${GUACAMOLE_DB_NAME}
       - POSTGRES_USER=${GUACAMOLE_DB_USER}
