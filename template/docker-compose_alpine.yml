@@ -38,7 +38,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
 
   guacamole:
-    image: guacamole/guacamole:${GUACAMOLE_DOCKER_TAG}
+    image: guacamole/guacamole:${VERSION}
     container_name: guacamole
     hostname: guacamole
     restart: always
@@ -63,7 +63,6 @@ services:
       - POSTGRES_PASSWORD=${GUACAMOLE_DB_PWD}
     volumes:
       - /srv/guacamole/app:/srv/guacamole/
-      - /srv/guacamole/config/server.xml:/usr/local/tomcat/conf/server.xml:ro
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
 
