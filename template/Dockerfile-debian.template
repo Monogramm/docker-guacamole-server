@@ -2,6 +2,7 @@ FROM guacamole/guacd:%%VERSION%%
 
 # Add requirements and install application
 RUN set -ex; \
+    apt-get update; \
     apt-get install \
         pulseaudio \
         ghostscript \
